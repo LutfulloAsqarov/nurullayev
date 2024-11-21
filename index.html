@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Football Players</title>
+        <style>
+            /* General Reset */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: "Arial", sans-serif;
+                background: linear-gradient(135deg, #1e3c72, #2a5298);
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                padding: 20px;
+                position: relative;
+            }
+            h1 {
+                font-size: 2.5rem;
+                margin-bottom: 30px;
+                text-transform: uppercase;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+            .players-container {
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .player-card {
+                background: rgba(255, 255, 255, 0.1);
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                border-radius: 15px;
+                overflow: hidden;
+                box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+                transition: transform 0.4s, box-shadow 0.4s;
+                width: 250px;
+                cursor: pointer;
+            }
+            .player-card:hover {
+                transform: translateY(-10px) scale(1.05);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            }
+            .player-card img {
+                width: 100%;
+                height: 350px;
+                object-fit: cover;
+                border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+            }
+            .player-card div {
+                font-size: 1.2rem;
+                font-weight: bold;
+                padding: 15px;
+                text-align: center;
+                text-transform: capitalize;
+                background: rgba(255, 255, 255, 0.05);
+            }
+            .player-card a {
+                text-decoration: none;
+                color: white;
+                display: block;
+            }
+            .player-card a:hover div {
+                color: #ffeb3b;
+            }
+            /* Responsive Design */
+            @media (max-width: 768px) {
+                .players-container {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+            footer {
+                margin-top: 300px;
+                font-size: 40px;
+                position: absolute;
+                bottom: 0;
+                padding: 30px;
+                width: 100%;
+                text-align: center;
+                background: #1e3c72;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Dunyoning eng zo'r futbolchilari</h1>
+        <div class="players-container">
+            <div class="player-card">
+                <a href="player1.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKm2wX8Fj5PscBgDbdr1wskBnkYE8Cr9-rCA&s" alt="Lionel Messi" />
+                    <div>Lionel Messi</div>
+                </a>
+            </div>
+            <div class="player-card">
+                <a href="player2.html">
+                    <img src="https://cdn.britannica.com/73/234573-050-8EE03E16/Cristiano-Ronaldo-ceremony-rename-airport-Santa-Cruz-Madeira-Portugal-March-29-2017.jpg" alt="Cristiano Ronaldo" />
+                    <div>Cristiano Ronaldo</div>
+                </a>
+            </div>
+            <div class="player-card">
+                <a href="player3.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9tC-ZQqEU9rVL5ngfgE_DOk3-MOgUmIdDrw&s" alt="Kylian Mbappé" />
+                    <div>Kylian Mbappé</div>
+                </a>
+            </div>
+        </div>
+        <footer>Nurullayev Bekzodbek tomonidan tayyorlandi</footer>
+    </body>
+</html>
